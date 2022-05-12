@@ -1,0 +1,5 @@
+export PATH=/home/naveen/mpich-install/bin:$PATH
+mpic++ my_mpi_code.c -L/home/naveen/ipm-install/lib -lipm
+LD_PRELOAD=/home/naveen/ipm-install/lib/libipm.so mpirun ./a.out
+export IPM_KEYFILE=/home/naveen/ipm-install/etc/ipm_key_mpi
+/home/naveen/ipm-install/bin/ipm_parse -html file.xml
